@@ -44,5 +44,10 @@ namespace BillingSoftware
             get { return _gSTNumber; }
             set { _gSTNumber = value; }
         }
+        int _ListOfProduct;
+        int _quality;
+        int _amount;
+        int _totalAmount;
+        string _paymentType;
     }
 }

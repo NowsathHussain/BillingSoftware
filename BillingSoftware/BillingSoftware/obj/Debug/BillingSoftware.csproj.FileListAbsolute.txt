@@ -1,1 +1,9 @@
 C:\Users\Nowsath\Desktop\git Sample\BillingSoftware\BillingSoftware\BillingSoftware\bin\Debug\BillingSoftware.exe.config
+C:\Users\Nowsath\Desktop\git Sample\BillingSoftware\BillingSoftware\BillingSoftware\bin\Debug\BillingSoftware.exe
+C:\Users\Nowsath\Desktop\git Sample\BillingSoftware\BillingSoftware\BillingSoftware\bin\Debug\BillingSoftware.pdb
+C:\Users\Nowsath\Desktop\git Sample\BillingSoftware\BillingSoftware\BillingSoftware\obj\Debug\BillingSoftware.csprojResolveAssemblyReference.cache
+C:\Users\Nowsath\Desktop\git Sample\BillingSoftware\BillingSoftware\BillingSoftware\obj\Debug\BillingSoftware.Form1.resources
+C:\Users\Nowsath\Desktop\git Sample\BillingSoftware\BillingSoftware\BillingSoftware\obj\Debug\BillingSoftware.Properties.Resources.resources
+C:\Users\Nowsath\Desktop\git Sample\BillingSoftware\BillingSoftware\BillingSoftware\obj\Debug\BillingSoftware.csproj.GenerateResource.Cache
+C:\Users\Nowsath\Desktop\git Sample\BillingSoftware\BillingSoftware\BillingSoftware\obj\Debug\BillingSoftware.exe
+C:\Users\Nowsath\Desktop\git Sample\BillingSoftware\BillingSoftware\BillingSoftware\obj\Debug\BillingSoftware.pdb

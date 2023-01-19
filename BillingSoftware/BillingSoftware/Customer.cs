@@ -17,6 +17,7 @@ namespace BillingSoftware
             get { return _mobno; }
             set { _mobno = value; }
         }
+        string _emailID;
 
     }
 }
