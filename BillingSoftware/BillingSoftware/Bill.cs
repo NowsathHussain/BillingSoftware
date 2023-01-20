@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace BillingSoftware
 {
-    class Bill
+    public class Bill
     {
-        int _billnumber;
+       public int _billnumber;
 
         public int Billnumber
         {

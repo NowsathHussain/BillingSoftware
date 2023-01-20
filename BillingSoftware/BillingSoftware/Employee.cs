@@ -10,6 +10,7 @@ namespace BillingSoftware
     class Employee
     {
         public static string inputFilePath = "C:\\MySampleInput\\New folder\\Employee.txt";
+        static Dictionary<int,Employee> Prodicts = new Dictionary<int, Employee>();
         string _EmployeeID;
         string _name;
         string _Password;
@@ -34,7 +35,7 @@ namespace BillingSoftware
             {
                 string[] myprod =Prod.Split('|');
                 Employee p = new Employee((myprod[0]), myprod[1], myprod[2],myprod[3]);
-                
+                Prodicts.Add(Convert.ToInt32(myprod[0]), p);
             }
 
         }
