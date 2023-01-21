@@ -28,6 +28,12 @@ namespace BillingSoftware
         }
         string _category;
 
+        public string Category
+        {
+            get { return _category; }
+            set { _category = value; }
+        }
+
         public Employee()
         {
 

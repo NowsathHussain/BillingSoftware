@@ -28,6 +28,8 @@ namespace BillingSoftware
             Employee em = new Employee();
             int Username =Convert.ToInt32(textBox1.Text);
             string password = textBox2.Text;
+            //string category = "";
+
             if(Employee.Prodicts.ContainsKey(Username))
             {
                 em = Employee.Prodicts[Username];
@@ -36,9 +38,34 @@ namespace BillingSoftware
             {
                 if(password==em.Password)
                 {
-                     Form2 fg = new Form2();
-                     fg.Show();
+                     if(em.Category=="OPERATOR")
+                     {
+                         Form2 fg = new Form2();
+                         fg.Show();
+                     }
                 }        
+            }
+            if (Username == em.EmployeeID)
+            {
+                if (password == em.Password)
+                {
+                    if (em.Category == "MANAGER")
+                    {
+                        Form3 fI = new Form3();
+                        fI.Show();
+                    }
+                }
+            }
+            if (Username == em.EmployeeID)
+            {
+                if (password == em.Password)
+                {
+                    if (em.Category == "ADMIN")
+                    {
+                        Form4 fK = new Form4();
+                        fK.Show();
+                    }
+                }
             }
             else
             {
