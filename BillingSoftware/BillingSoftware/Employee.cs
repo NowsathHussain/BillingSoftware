@@ -7,16 +7,33 @@ using System.IO;
 
 namespace BillingSoftware
 {
-    class Employee
-    {
+    public class Employee
+    {   
         public static string inputFilePath = "C:\\MySampleInput\\New folder\\Employee.txt";
-        static Dictionary<int,Employee> Prodicts = new Dictionary<int, Employee>();
-        string _EmployeeID;
+        public static Dictionary<int,Employee> Prodicts = new Dictionary<int, Employee>();
+        int _EmployeeID;
+
+        public int EmployeeID
+        {
+            get { return _EmployeeID; }
+            set { _EmployeeID = value; }
+        }
         string _name;
         string _Password;
+
+        public string Password
+        {
+            get { return _Password; }
+            set { _Password = value; }
+        }
         string _category;
 
-        public Employee(string EmployeeID,string name, string Password,string category)
+        public Employee()
+        {
+
+        }
+
+        public Employee(int EmployeeID,string name, string Password,string category)
         {
             this._EmployeeID = EmployeeID;
             this._name = name;
@@ -34,7 +51,7 @@ namespace BillingSoftware
             foreach(string Prod in Employee)
             {
                 string[] myprod =Prod.Split('|');
-                Employee p = new Employee((myprod[0]), myprod[1], myprod[2],myprod[3]);
+                Employee p = new Employee(Convert.ToInt32(myprod[0]), myprod[1], myprod[2],myprod[3]);
                 Prodicts.Add(Convert.ToInt32(myprod[0]), p);
             }
 
