@@ -10,8 +10,15 @@ namespace BillingSoftware
 {
     class Products
     {
-        static List<Products> m3 = new List<Products>();
-        string _productID;
+        public static List<Products> m3 = new List<Products>();
+        public static Dictionary<int, Products> Prodicts = new Dictionary<int, Products>();
+        int _productID;
+
+        public int ProductID
+        {
+            get { return _productID; }
+            set { _productID = value; }
+        }
         string _name;
         string _category;
         int _unitPrice;
@@ -23,7 +30,7 @@ namespace BillingSoftware
         Taxcategory _taxcategory;
         Status _status;
         public static string inputFilePath = "C:\\MySampleInput\\New folder\\Product.txt";
-        public Products(string productID,string name, string category,int unitPrice,Taxcategory taxcategory,Status status)
+        public Products(int productID,string name, string category,int unitPrice,Taxcategory taxcategory,Status status)
         {
             this._productID = productID;
             this._name = name;
@@ -38,12 +45,10 @@ namespace BillingSoftware
             foreach (string det in details)
             {
                 string[] Detai = det.Split('|');
-                Products p = new Products((Detai[0]), Detai[1], Detai[2], Convert.ToInt32(Detai[3]), (Taxcategory)Enum.Parse(typeof(Taxcategory), Detai[4]), (Status)Enum.Parse(typeof(Status), Detai[5]));
-                m3.Add(p);
+                Products p = new Products(Convert.ToInt32(Detai[0]), Detai[1], Detai[2], Convert.ToInt32(Detai[3]), (Taxcategory)Enum.Parse(typeof(Taxcategory), Detai[4]), (Status)Enum.Parse(typeof(Status), Detai[5]));
+                Prodicts.Add(Convert.ToInt32(Detai[0]), p);
             }
         }
-
-
     }
     public enum Status
     {

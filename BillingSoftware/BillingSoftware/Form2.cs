@@ -19,7 +19,30 @@ namespace BillingSoftware
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            listView1.Items.Add("Billingpage");
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //if(textBox1.Text==)
+            //{
+
+            //}
         }
     }
 }

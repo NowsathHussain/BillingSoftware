@@ -41,7 +41,7 @@ namespace BillingSoftware
                 }
                 else
                 {
-                    MessageBox.Show("Invalid password and user ID");
+                    MessageBox.Show("Invalid password ");
                 }
             }
             if (Username == em.EmployeeID)
