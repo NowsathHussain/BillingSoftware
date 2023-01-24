@@ -8,10 +8,10 @@ using System.IO;
 
 namespace BillingSoftware
 {
-    class Products
+    public class Products
     {
         public static List<Products> m3 = new List<Products>();
-        public static Dictionary<int, Products> Prodicts = new Dictionary<int, Products>();
+        public static Dictionary<int, Products> Prodts = new Dictionary<int, Products>();
         int _productID;
 
         public int ProductID
@@ -46,7 +46,7 @@ namespace BillingSoftware
             {
                 string[] Detai = det.Split('|');
                 Products p = new Products(Convert.ToInt32(Detai[0]), Detai[1], Detai[2], Convert.ToInt32(Detai[3]), (Taxcategory)Enum.Parse(typeof(Taxcategory), Detai[4]), (Status)Enum.Parse(typeof(Status), Detai[5]));
-                Prodicts.Add(Convert.ToInt32(Detai[0]), p);
+                Prodts.Add(Convert.ToInt32(Detai[0]), p);
             }
         }
     }

@@ -10,34 +10,24 @@ using System.Windows.Forms;
 
 namespace BillingSoftware
 {
-    public partial class Form4 : Form
+    public partial class Form5 : Form
     {
-        public Form4()
+        public Form5()
         {
             InitializeComponent();
         }
 
-        private void Form4_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            Form6 fg = new Form6();
-            fg.Show();
+            listBox1.Items.Add(textBox2.Text);
+            listBox1.Items.Add(textBox3.Text);
+            listBox1.Items.Add(textBox4.Text);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form5 fi = new Form5();
-            fi.Show();
-        }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Form7 fm = new Form7();
-            fm.Show();
         }
     }
+    
 }

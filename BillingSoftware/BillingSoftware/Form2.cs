@@ -39,10 +39,7 @@ namespace BillingSoftware
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //if(textBox1.Text==)
-            //{
-
-            //}
+            
         }
     }
 }
