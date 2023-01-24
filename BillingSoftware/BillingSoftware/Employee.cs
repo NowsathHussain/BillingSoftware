@@ -11,6 +11,7 @@ namespace BillingSoftware
     {   
         public static string inputFilePath = "C:\\MySampleInput\\New folder\\Employee.txt";
         public static Dictionary<int,Employee> Prodicts = new Dictionary<int, Employee>();
+        public static List<Employee> m2 = new List<Employee>();
         int _EmployeeID;
         public int EmployeeID
         {
@@ -54,7 +55,17 @@ namespace BillingSoftware
                 Employee p = new Employee(Convert.ToInt32(myprod[0]), myprod[1], myprod[2],myprod[3]);
                 Prodicts.Add(Convert.ToInt32(myprod[0]), p);
             }
-        }      
+        }
+        public static void SplitInput2(string inputFilePath)
+        {
+            string[] Employee = File.ReadAllLines(inputFilePath);
+            foreach (string Prod in Employee)
+            {
+                string[] myprod = Prod.Split('|');
+                Employee p = new Employee(Convert.ToInt32(myprod[0]), myprod[1], myprod[2], myprod[3]);
+                m2.Add(p);
+            }
+        }  
     }
     
   
