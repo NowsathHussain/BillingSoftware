@@ -12,3 +12,4 @@ C:\Users\Nowsath\Desktop\git Sample\BillingSoftware\BillingSoftware\BillingSoftw
 C:\Users\Nowsath\Desktop\git Sample\BillingSoftware\BillingSoftware\BillingSoftware\obj\Debug\BillingSoftware.Form5.resources
 C:\Users\Nowsath\Desktop\git Sample\BillingSoftware\BillingSoftware\BillingSoftware\obj\Debug\BillingSoftware.Form6.resources
 C:\Users\Nowsath\Desktop\git Sample\BillingSoftware\BillingSoftware\BillingSoftware\obj\Debug\BillingSoftware.Form7.resources
+C:\Users\Nowsath\Desktop\git Sample\BillingSoftware\BillingSoftware\BillingSoftware\obj\Debug\BillingSoftware.csprojResolveAssemblyReference.cache

@@ -65,7 +65,19 @@ namespace BillingSoftware
                 Employee p = new Employee(Convert.ToInt32(myprod[0]), myprod[1], myprod[2], myprod[3]);
                 m2.Add(p);
             }
-        }  
+        }
+        public static void AddEmployee(Employee es)
+        {
+            int temp = 0;
+            foreach (Employee l in m2)
+            {
+                temp = l._EmployeeID;
+            }
+            StreamWriter writter = new StreamWriter(inputFilePath,append:true);
+            writter.WriteLine(temp+1+"|"+es._name+"|"+es._Password+"|"+es._category);
+            //MessageBox.Show("Employee added successfully");
+            writter.Close();
+        }
     }
     
   

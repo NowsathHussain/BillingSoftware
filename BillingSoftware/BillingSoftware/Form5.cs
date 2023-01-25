@@ -28,16 +28,13 @@ namespace BillingSoftware
         private void button1_Click(object sender, EventArgs e)
         {
             Employee.SplitInput2(Employee.inputFilePath);
-            int temp = 0;
-            Employee fg = new Employee();
-            foreach(Employee l in Employee.m2)
-            {
-               temp= l.EmployeeID+1;
-            }
-            StreamWriter writter = new StreamWriter(Employee.inputFilePath, true);
-            writter.WriteLine(temp+"|"+textBox2.Text+"|"+textBox3.Text+"|"+textBox4.Text);
-            MessageBox.Show("Employee added successfully");
-            writter.Close();
+            string M =textBox2.Text ;
+            string N =textBox3.Text ;
+            string P =textBox4.Text ;
+            Employee em = new Employee(0,M,N,P);
+            Employee.AddEmployee(em);
+            MessageBox.Show("Added sucessfully");
+
         }
 
         private void button3_Click(object sender, EventArgs e)
